@@ -12,27 +12,51 @@
 
 <body>
     <div class="background">
-        <div class="main">
-            <div class="input">
-                <input type="text" required placeholder="Search">
-                <button><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+        <div class="info">
+            <div>
+                <h2>the weather</h2>
             </div>
-            <h2>Weather in uttarakhand</h2>
-            <span class="temp">34.c</span>
-            <img src="" alt="" class="icon"><span>broken clouds</span>
-            <p>humidity-81%</p>
-            <p>wind speed</p>
 
+            <div class="flex"> 
+                <span class="temp"></span>
+                <div class="forgap">
+                    <p class="cntrr"></p>
+                    <h1 class="name"></h1>
+                    <!-- <p>11.00-friday 9-10 2022</p> -->
+                </div>
 
+                <div class="icon">
+                    <div class="img"></div>
+                    <p class="hz"></p>
+                </div>
+            </div>
+        </div>
 
+        <div class="main">
+            <div class="upper">
+            <input type="text" class="input" placeholder="Search Location">
+            <button class="find"><i class="fa-solid fa-magnifying-glass"></i></button>
+         </div>
+            <div class="city">
+            <p class="static">new york</p>
+            <p class="static">california</p>
+            <p class="static">paris</p>
+            <p class="static">tokyo</p>
+            </div>
+            <hr>
+            <div class="bottom">
+            <h2>weather details</h2>
+            <p><span>temp-min - </span> <span class="min"></span></p>
+            <p><span>temp-max - </span> <span class="max"></span></p>
+            <p><span>humidity - </span> <span class="hmidity"></span></p>
+            <p><span>wind - </span> <span class="wind"></span></p>
+            </div>
         </div>
 
 
 
-
-
     </div>
-
+    <script src="./index.js"></script>
 </body>
 
 </html>
