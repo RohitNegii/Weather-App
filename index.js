@@ -40,7 +40,7 @@ function show(data) {
     document.getElementsByClassName('min')[0].innerHTML = data.main.temp_min + 'oC'
     document.getElementsByClassName('max')[0].innerHTML = data.main.temp_max + 'oC'
     document.getElementsByClassName('name')[0].innerHTML = data.name
-    document.getElementsByClassName('hz')[0].innerHTML = data.weather[0].main
+    document.getElementsByClassName('hz')[0].innerHTML = data.weather[0].description
 
 
     const icon = data.weather[0].icon
