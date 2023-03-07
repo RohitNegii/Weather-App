@@ -91,7 +91,7 @@ function show(data) {
     }
 
     else {
-        document.getElementsByClassName('background')[0].style = "background-image:url('https://images.ctfassets.net/hrltx12pl8hq/6TIZLa1AKeBel0yVO7ReIn/1fc0e2fd9fcc6d66b3cc733aa2547e11/weather-images.jpg?fit=fill&w=800&h=300');background-position :center;  background-repeat: no-repeat;background-size: cover;"
+        document.getElementsByClassName('background')[0].style = "background-image:url('https://cdn.pixabay.com/photo/2016/03/27/07/32/clouds-1282314__340.jpg');background-position:center background-repeat: no-repeat;background-size: cover;"
     }
 }
 
