@@ -54,7 +54,7 @@ function show(data) {
     document.getElementsByClassName('cntrr')[0].innerHTML = data.sys.country
 
     if (data.weather[0].description == 'haze') {
-        document.getElementsByClassName('background')[0].style = "background-image:url('https://images.pexels.com/photos/1367192/pexels-photo-1367192.jpeg?cs=srgb&dl=pexels-eberhard-grossgasteiger-1367192.jpg&fm=jpg');background-position :center;  background-repeat: no-repeat;background-size: cover;"
+        document.getElementsByClassName('background')[0].style = "background-image:url('http://cen.acs.org/content/dam/cen/99/web/2/WEB/20210208lnp2-delhifog.jpg');background-position :center;  background-repeat: no-repeat;background-size: cover;"
     }
     else if (data.weather[0].description == 'snow') {
         document.getElementsByClassName('background')[0].style = "background-image:url('https://www.lovethispic.com/uploaded_images/144088-Light-Falling-Snow.gif');background-position :center;  background-repeat: no-repeat;background-size: cover;"
@@ -165,8 +165,23 @@ function load(){
             .catch((err) => {
                 alert('please write valid city')
             })
-
 } 
+
+// let btnn=document.getElementsByClassName('showw')[0]
+// btnn.addEventListener('click',()=>{
+//     // if(document.getElementsByTagName('*').style=='color:gray'){
+
+//         document.getElementsByClassName('background')[0].style="color:white"
+//        console.log('ji')
+    
+//     // }
+//         // else{
+//             // document.getElementsByTagName('*').style='color:gray'
+//         // }
+// })
+
+
+
 
 
 
