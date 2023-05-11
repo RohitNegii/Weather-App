@@ -33,11 +33,12 @@ function show(data) {
     data.wind.speed + "km/h";
   document.getElementsByClassName("hmidity")[0].innerHTML =
     data.main.humidity + "%";
-  document.getElementsByClassName("temp")[0].innerHTML = data.main.temp + "C";
+  document.getElementsByClassName("temp")[0].innerHTML =
+    data.main.temp + "&degC";
   document.getElementsByClassName("min")[0].innerHTML =
-    data.main.temp_min + "oC";
+    data.main.temp_min + "&degC";
   document.getElementsByClassName("max")[0].innerHTML =
-    data.main.temp_max + "oC";
+    data.main.temp_max + "&degC";
   document.getElementsByClassName("name")[0].innerHTML = data.name;
   document.getElementsByClassName("hz")[0].innerHTML =
     data.weather[0].description;

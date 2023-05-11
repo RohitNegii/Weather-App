@@ -3,8 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   text-transform: capitalize;
-  color: black;
-  font-family: Monospace;
+  color: #323232;
   font-weight: 600;
 }
 
@@ -19,7 +18,7 @@ body {
 .background {
   height: max-content;
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -28,7 +27,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  box-shadow: 0 0 2px gray;
+  box-shadow: 0 0 2px #323232;
   height: 100vh;
   width: 30%;
 }
@@ -40,13 +39,13 @@ body {
 .main input {
   height: 2.3rem;
   width: 65%;
-  color: rgb(148, 74, 74);
+  color: #323232;
   background: transparent;
   border: none;
-  border-bottom: 1px solid rgb(22, 2, 2);
+  border-bottom: 1px solid #323232;
   outline: none;
-  font-size: 1.3rem;
-  font-weight: 800;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 .main button i {
   font-size: 1.5rem;
@@ -69,23 +68,26 @@ body {
   margin-left: 1rem;
 }
 .city p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 2rem;
+  font-family: Readex Pro;
 }
 .bottom {
   height: 10rem;
   margin-left: 1rem;
 }
 .bottom h2 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 800;
   line-height: 3rem;
+  font-family: Outfit;
 }
 .bottom p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 2rem;
+  font-family: Readex Pro;
 }
 .info {
   width: 70%;
@@ -97,6 +99,7 @@ body {
 .info div h2 {
   font-size: 2rem;
   font-weight: 900;
+  font-family: Outfit;
 }
 .flex {
   display: flex;
@@ -104,8 +107,9 @@ body {
   gap: 2rem;
 }
 .info div span {
-  font-size: 6rem;
+  font-size: 3rem;
   font-weight: 500;
+  font-family: Readex Pro;
 }
 .forgap {
   display: flex;
@@ -116,7 +120,7 @@ body {
   cursor: pointer;
   display: block;
   position: relative;
-  color: black;
+  color: #323232;
   width: max-content;
 }
 .city p:hover {
@@ -139,17 +143,22 @@ body {
   transform-origin: bottom left;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .background {
-    display: flex;
+    /* display: flex; */
     flex-direction: column-reverse;
     justify-content: space-evenly;
     align-items: center;
   }
+  .info {
+    margin-top: 1rem;
+  }
   .main {
-    width: 350px;
-    height: 300px;
-    box-shadow: 0 0 8px black;
+    /* width: 30rem;
+    height: 25rem; */
+    width: 90%;
+    height: 20rem;
+    box-shadow: 0 0 8px #323232;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 2rem;
@@ -158,17 +167,17 @@ body {
     margin-top: 1rem;
   }
   .info div h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .flex {
     flex-direction: column;
   }
   .cntrr {
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: 900;
   }
   .name {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .img {
     height: 5rem;
@@ -176,5 +185,11 @@ body {
   }
   .hz {
     font-size: 2rem;
+  }
+}
+@media screen and (max-width: 330px) {
+  .main {
+    height: max-content;
+    padding-bottom: 1rem;
   }
 }
